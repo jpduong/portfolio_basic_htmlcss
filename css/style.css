@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300");
+body {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  counter-reset: timeline 19;
+  box-sizing: border-box; }
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  color: purple; }
+  nav a {
+    text-decoration: none; }
+  nav .underline::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    transition: width 0.3s;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #fdfbfb 0%, #ebedee 100%); }
+  nav .underline:hover::after {
+    width: 100%;
+    transition: width 0.3s; }
+
+h2 {
+  text-align: center;
+  margin: 0px; }
+
+.center, #home section, #projects .projects {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.line {
+  text-align: center; }
+
+.page, #home, #aboutme, #experience, #projects {
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box; }
+
+#home {
+  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%); }
+  #home section {
+    text-align: center; }
+  #home .dp {
+    background-image: url("../resources/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;
+    border: 2px solid white; }
+  #home .socialmedia {
+    display: flex; }
+    #home .socialmedia .socialmedia-item {
+      display: block;
+      margin: auto;
+      height: 25px;
+      width: 25px; }
+    #home .socialmedia .a {
+      background-image: url("../resources/github.svg"); }
+    #home .socialmedia .b {
+      background-image: url("../resources/linkedin.svg"); }
+    #home .socialmedia .c {
+      background-image: url("../resources/medium.svg"); }
+
+#aboutme {
+  background-image: linear-gradient(to bottom, #84fab0 0%, #8fd3f4 100%); }
+  #aboutme .aboutme {
+    text-align: justify; }
+  #aboutme .album {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: end; }
+    #aboutme .album .item {
+      width: 100px;
+      height: 100px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 50%;
+      border: 2px solid white; }
+      #aboutme .album .item.a {
+        background-image: url("../resources/a.jpg"); }
+      #aboutme .album .item.b {
+        background-image: url("../resources/india.jpg");
+        justify-self: start; }
+      #aboutme .album .item.c {
+        background-image: url("../resources/c.jpg"); }
+      #aboutme .album .item.d {
+        background-image: url("../resources/nepal.jpg");
+        justify-self: start; }
+
+#experience {
+  background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%); }
+  #experience .timeline {
+    position: relative; }
+    #experience .timeline::before {
+      content: '';
+      height: 100%;
+      width: 2px;
+      background-color: black;
+      position: absolute; }
+    #experience .timeline .timeline-item {
+      margin: 20px; }
+      #experience .timeline .timeline-item::before {
+        content: '';
+        background: black;
+        position: relative;
+        left: -27px;
+        counter-increment: timeline -1;
+        content: counter(timeline); }
+
+#projects {
+  background-image: linear-gradient(to bottom, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+  position: relative; }
+  #projects .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    justify-items: center; }
+    #projects .projects .project-item {
+      background-color: black; }
+  #projects footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translatex(-50%); }
+
+/*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=style.css.map */
