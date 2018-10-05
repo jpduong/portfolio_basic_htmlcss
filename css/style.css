@@ -27,7 +27,7 @@ nav {
     width: 100%;
     transition: width 0.3s; }
 
-h2 {
+h2, h3 {
   text-align: center;
   margin: 0px; }
 
@@ -102,21 +102,9 @@ h2 {
   background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%); }
   #experience .timeline {
     position: relative; }
-    #experience .timeline::before {
-      content: '';
-      height: 100%;
-      width: 2px;
-      background-color: black;
-      position: absolute; }
     #experience .timeline .timeline-item {
-      margin: 20px; }
-      #experience .timeline .timeline-item::before {
-        content: '';
-        background: black;
-        position: relative;
-        left: -27px;
-        counter-increment: timeline -1;
-        content: counter(timeline); }
+      margin: 20px;
+      text-align: center; }
 
 #projects {
   background-image: linear-gradient(to bottom, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
@@ -133,6 +121,15 @@ h2 {
     bottom: 20px;
     left: 50%;
     transform: translatex(-50%); }
+
+.icons {
+  height: 30px;
+  width: 30px; }
+
+.tech {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
 
 /*# sourceMappingURL=style.scss.map */
 
