@@ -11,7 +11,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 99;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  background-color: white;
   color: purple; }
   nav a {
     text-decoration: none; }
@@ -31,7 +31,7 @@ h2 {
   text-align: center;
   margin: 0px; }
 
-.center, #home section, #projects .projects {
+.center, #home .banner, #projects .projects {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -45,9 +45,14 @@ h2 {
   padding: 20px;
   box-sizing: border-box; }
 
+@keyframes animate {
+  0% {
+    background-position: 0px; }
+  100% {
+    background-position: 5440px; } }
 #home {
-  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%); }
-  #home section {
+  background-image: linear-gradient(to right, #9795f0 0%, #fbc8d4 100%); }
+  #home .banner {
     text-align: center; }
   #home .dp {
     background-image: url("../resources/banner.jpg");
@@ -65,12 +70,6 @@ h2 {
       margin: auto;
       height: 25px;
       width: 25px; }
-    #home .socialmedia .a {
-      background-image: url("../resources/github.svg"); }
-    #home .socialmedia .b {
-      background-image: url("../resources/linkedin.svg"); }
-    #home .socialmedia .c {
-      background-image: url("../resources/medium.svg"); }
 
 #aboutme {
   background-image: linear-gradient(to bottom, #84fab0 0%, #8fd3f4 100%); }
