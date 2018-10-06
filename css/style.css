@@ -38,7 +38,14 @@ h2, h3 {
   transform: translate(-50%, -50%); }
 
 .line {
-  text-align: center; }
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 30px;
+  height: 0px;
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%); }
 
 .page, #home, #aboutme, #experience, #projects {
   height: 100vh;
@@ -62,41 +69,51 @@ h2, h3 {
     width: 150px;
     border-radius: 50%;
     margin: auto;
-    border: 2px solid white; }
+    border: 4px solid white; }
+  #home .glow:hover {
+    box-shadow: 0 0 0 2px grey; }
   #home .socialmedia {
     display: flex; }
     #home .socialmedia .socialmedia-item {
       display: block;
       margin: auto;
       height: 25px;
-      width: 25px; }
+      width: 25px;
+      border-radius: 50%; }
 
 #aboutme {
   background-image: linear-gradient(to bottom, #84fab0 0%, #8fd3f4 100%); }
   #aboutme .aboutme {
-    text-align: justify; }
+    text-align: justify;
+    color: black; }
   #aboutme .album {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 50px;
     justify-items: end; }
     #aboutme .album .item {
       width: 100px;
       height: 100px;
       background-position: center;
       background-size: cover;
-      border-radius: 50%;
+      border-radius: 5%;
       border: 2px solid white; }
       #aboutme .album .item.a {
-        background-image: url("../resources/a.jpg"); }
+        background-image: url("../resources/a.jpg");
+        transform: rotate(10deg); }
       #aboutme .album .item.b {
         background-image: url("../resources/india.jpg");
-        justify-self: start; }
+        justify-self: start;
+        transform: rotate(-10deg); }
       #aboutme .album .item.c {
-        background-image: url("../resources/c.jpg"); }
+        background-image: url("../resources/c.jpg");
+        transform: rotate(-10deg); }
       #aboutme .album .item.d {
         background-image: url("../resources/nepal.jpg");
-        justify-self: start; }
+        justify-self: start;
+        transform: rotate(10deg); }
+      #aboutme .album .item:hover {
+        transform: rotate(0deg); }
 
 #experience {
   background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%); }
