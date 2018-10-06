@@ -101,6 +101,16 @@ h2, h3 {
       #aboutme .album .item.a {
         background-image: url("../resources/a.jpg");
         transform: rotate(10deg); }
+        #aboutme .album .item.a::before {
+          content: "";
+          height: 10px;
+          width: 10px;
+          border-radius: 50%;
+          background: white;
+          position: absolute;
+          top: 5%;
+          left: 50%;
+          transform: translatex(-50%); }
       #aboutme .album .item.b {
         background-image: url("../resources/india.jpg");
         justify-self: start;

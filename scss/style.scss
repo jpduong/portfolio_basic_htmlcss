@@ -154,6 +154,7 @@ h2, h3 {
                 &.a {
                     background-image: url("../resources/a.jpg");
                     transform: rotate(10deg);
+                    @import 'pin';
                 }
                 &.b {
                     background-image: url("../resources/india.jpg");
