@@ -34,14 +34,14 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 99;
-  background-color: #fbc8d4;
+  background-color: white;
   box-shadow: 0 3px 2px -2px gray;
   color: white; }
   nav a {
     text-decoration: none;
     font-weight: 900; }
   nav a:visited {
-    color: white; }
+    color: purple; }
   nav .underline::after {
     content: '';
     width: 0px;
@@ -94,38 +94,40 @@ h2, h3 {
       width: 25px;
       border-radius: 50%; }
 
-#aboutme .aboutme-container {
-  padding: 50px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background: #9795f0;
-  border-radius: 2%; }
-#aboutme .aboutme {
-  text-align: center;
-  color: black; }
-#aboutme .album {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  justify-items: flex-end;
-  width: 100%; }
-  #aboutme .album .item {
-    width: 100px;
-    height: 100px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10%; }
-    #aboutme .album .item.india {
-      transform: rotate(-15deg); }
-    #aboutme .album .item.nepal {
-      justify-self: start;
-      transform: rotate(15deg); }
-    #aboutme .album .item.hanoi {
-      transform: rotate(-15deg); }
-    #aboutme .album .item.linh {
-      justify-self: start;
-      transform: rotate(15deg); }
-    #aboutme .album .item:hover {
-      transform: rotate(0deg); }
+#aboutme {
+  background-color: #FAF0E6; }
+  #aboutme .aboutme-container {
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #9795f0;
+    border-radius: 2%; }
+  #aboutme .aboutme {
+    text-align: center;
+    color: black; }
+  #aboutme .album {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    justify-items: flex-end;
+    width: 100%; }
+    #aboutme .album .item {
+      width: 100px;
+      height: 100px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 10%; }
+      #aboutme .album .item.india {
+        transform: rotate(-15deg); }
+      #aboutme .album .item.nepal {
+        justify-self: start;
+        transform: rotate(15deg); }
+      #aboutme .album .item.hanoi {
+        transform: rotate(-15deg); }
+      #aboutme .album .item.linh {
+        justify-self: start;
+        transform: rotate(15deg); }
+      #aboutme .album .item:hover {
+        transform: rotate(0deg); }
 
 #experience {
   background-image: linear-gradient(to bottom, #9795f0 0%, #fbc8d4 100%); }
@@ -134,7 +136,7 @@ h2, h3 {
     text-align: center; }
 
 #projects {
-  color: black; }
+  background-color: #FAF0E6; }
   #projects .projects {
     border: 1px solid green;
     display: grid;

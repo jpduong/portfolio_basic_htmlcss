@@ -4,6 +4,7 @@
 $box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 $grey: grey;
 $white: white;
+$cream: #FAF0E6;
 
 .grey {
     color: $grey;
@@ -64,15 +65,15 @@ nav {
     width: 100%;
     z-index: 99;
     // background-color: white;
-    background-color: #fbc8d4;
+    background-color: white;
     box-shadow: 0 3px 2px -2px gray;
-    color: white;
+    color: $white;
         a {
             text-decoration: none;
             font-weight: 900;
         }
         a:visited {
-            color: white;
+            color: purple;
         }
         .underline::after {
                 content: '';
@@ -140,6 +141,8 @@ h2, h3 {
 
     #aboutme {
         @extend %page;
+        background-color: #FAF0E6;      
+        // background-color:  #FFEFD5;
         .aboutme-container {
             @extend %center;
             padding: 50px;
@@ -213,7 +216,8 @@ h2, h3 {
 
     #projects {
         @extend %page;
-        color: black;
+        background-color: $cream;
+        // color: black;
         .projects {
             border: 1px solid green;
             @extend %center;
