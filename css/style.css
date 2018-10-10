@@ -1,165 +1,49 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300");
-.grey {
-  color: grey; }
-
-.white {
-  color: white; }
-
-.italics {
-  font-style: italic; }
-
-#home, #aboutme, #experience, #projects {
-  height: 100vh;
-  padding: 20px;
-  box-sizing: border-box;
-  position: relative; }
-
-#home .banner, #aboutme .aboutme-container, #experience .timeline, #projects .projects {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.glow:hover {
-  box-shadow: 0 0 0 2px grey; }
-
-body {
-  color: white;
-  font-family: 'Nunito', sans-serif;
-  box-sizing: border-box; }
-
 nav {
+  list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  z-index: 99;
   position: fixed;
   width: 100%;
-  z-index: 99;
-  background-color: white;
-  box-shadow: 0 3px 2px -2px gray;
-  color: white; }
-  nav a {
-    text-decoration: none;
-    font-weight: 900; }
-  nav a:visited {
-    color: purple; }
-  nav .underline::after {
-    content: '';
-    width: 0px;
-    height: 2px;
-    display: block;
-    transition: width 0.3s;
-    border-radius: 2px;
-    background-color: white; }
-  nav .underline:hover::after {
-    width: 100%;
-    transition: width 0.3s; }
+  background-color: white; }
 
-h1 {
-  letter-spacing: 4px; }
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  text-align: center; }
 
-h2, h3 {
-  text-align: center;
-  margin: 0px;
-  letter-spacing: 4px; }
+.icon {
+  width: 50px;
+  height: 50px; }
 
-.line {
-  text-align: center;
-  border: 1px solid;
-  border-radius: 5px;
-  width: 30px;
-  height: 0px;
-  position: relative;
-  left: 50%;
-  transform: translatex(-50%); }
+.dp {
+  height: 150px;
+  width: 150px;
+  border: 20px solid white; }
 
-#home {
-  background-image: linear-gradient(to bottom, #9795f0 0%, #fbc8d4 100%); }
-  #home .banner {
-    text-align: center; }
-  #home .dp {
-    background-image: url("../resources/banner.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    margin: auto;
-    border: 4px solid white; }
-  #home .socialmedia {
-    display: flex; }
-    #home .socialmedia .socialmedia-item {
-      display: block;
-      margin: auto;
-      height: 25px;
-      width: 25px;
-      border-radius: 50%; }
+.home {
+  height: 100vh;
+  background-color: #F6EDE9;
+  padding: 50px; }
+  .home .home-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px; }
 
-#aboutme {
-  background-color: #FAF0E6; }
-  #aboutme .aboutme-container {
-    padding: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background: #9795f0;
-    border-radius: 2%; }
-  #aboutme .aboutme {
-    text-align: center;
-    color: black; }
-  #aboutme .album {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-    justify-items: flex-end;
-    width: 100%; }
-    #aboutme .album .item {
-      width: 100px;
-      height: 100px;
-      background-position: center;
-      background-size: cover;
-      border-radius: 10%; }
-      #aboutme .album .item.india {
-        transform: rotate(-15deg); }
-      #aboutme .album .item.nepal {
-        justify-self: start;
-        transform: rotate(15deg); }
-      #aboutme .album .item.hanoi {
-        transform: rotate(-15deg); }
-      #aboutme .album .item.linh {
-        justify-self: start;
-        transform: rotate(15deg); }
-      #aboutme .album .item:hover {
-        transform: rotate(0deg); }
-
-#experience {
-  background-image: linear-gradient(to bottom, #9795f0 0%, #fbc8d4 100%); }
-  #experience .timeline .timeline-item {
-    margin: 20px;
-    text-align: center; }
-
-#projects {
-  background-color: #FAF0E6; }
-  #projects .projects {
-    border: 1px solid green;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    justify-items: center; }
-    #projects .projects .project-item {
-      background-color: orange; }
-  #projects footer {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translatex(-50%); }
-
-.icons {
-  height: 30px;
-  width: 30px; }
-
-.tech {
-  display: flex;
-  width: 100%;
-  justify-content: center; }
-
-/*# sourceMappingURL=style.scss.map */
+.me {
+  background-color: yellow;
+  padding: 50px; }
+  .me .me-container {
+    background-color: green; }
+    .me .me-container .box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px; }
+      .me .me-container .box .box-item {
+        border: 1px solid black;
+        margin: 0px; }
 
 /*# sourceMappingURL=style.css.map */
