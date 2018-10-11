@@ -254,7 +254,7 @@ $grey: #bdc3c7;
 $black: black;
 $white: white;
 $cream: #F6EDE9;
-$padding: 50px;
+$padding: 30px;
 .test {
     display: grid;
     grid-template-columns: 1fr;
@@ -274,11 +274,11 @@ nav {
 * {
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif; 
-    text-align: center;
+    // text-align: center;
 }
 .icon {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 .italics {
     font-style: italic;
@@ -290,8 +290,8 @@ nav {
     background-color: $white;
 }
 .icon-small {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     margin: auto 5px;
 }
 .dp {
@@ -308,35 +308,48 @@ nav {
     background-color: $cream;
     padding: $padding;
     .home-container {
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%,-50%);
         background-color: $white;
         display: flex;
         flex-direction: column;
         align-items: center;    
         padding: $padding;
+        text-align: center;
+    }
+}
+.bio {
+    background-color: $grey;
+    .work {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        grid-gap: 5px;
+        .project {
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+            &.c {
+                grid-column-start: span 2;   
+            }
+        }
     }
 }
 .me {
     background-color: $grey;
-    padding: $padding;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    text-align: center;
     height: 100vh;
-    .me-container {
-        background-color: $white;
-        // padding: $padding;
-        border: 1px solid black;
-        .box {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 5px;
-            border: 1px solid black;
-            .box-item {
-                border: 1px solid black;
-                margin: 0px;
-            }
+} 
+    .languages {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+        .languages-item {
+            // border: 1px solid black;
         }
     }
-} 
-.test {
-    border: 1px solid black;
-    padding: 0px;
-    margin: 0px;
-}
