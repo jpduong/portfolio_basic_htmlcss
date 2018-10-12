@@ -12,21 +12,17 @@
   list-style: none; }
 
 .icon {
-  width: 15px;
-  height: 15px; }
+  width: 20px;
+  height: 20px; }
 
 .icon-small {
-  width: 15px;
-  height: 15px;
-  margin: auto 5px; }
+  width: 12px;
+  height: 12px;
+  margin: 5px 5px; }
 
 .dp {
   height: 150px;
   width: 150px; }
-
-.social {
-  display: grid;
-  grid-template-columns: 1fr 1fr; }
 
 nav {
   display: flex;
@@ -36,8 +32,7 @@ nav {
   width: 100%;
   background-color: white;
   padding: 0px 50px;
-  box-shadow: 0 3px 2px -2px #bdc3c7;
-  opacity: 0; }
+  box-shadow: 0 3px 2px -2px #bdc3c7; }
 
 #home {
   height: 100vh;
@@ -51,6 +46,9 @@ nav {
     padding: 30px;
     text-align: center;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
+    #home .home-container .social {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
 
 #work {
   position: relative;
@@ -63,14 +61,22 @@ nav {
     justify-items: center;
     grid-gap: 5px; }
     #work .work-container .mywork .project {
-      height: 150px;
-      width: 150px;
+      height: 130px;
+      width: 130px;
       border: 1px solid black; }
-      #work .work-container .mywork .project.c {
-        grid-column-start: span 2; }
+      #work .work-container .mywork .project.a {
+        transform: rotate(-10deg); }
+      #work .work-container .mywork .project.b {
+        transform: rotate(10deg); }
+  #work .languages h3 {
+    padding-top: 20px; }
   #work .languages .languages-icons {
     display: flex;
-    justify-content: center; }
+    justify-content: space-between;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%); }
   #work .contact {
     padding: 30px; }
 
@@ -96,9 +102,9 @@ nav {
         height: 100px;
         border: 2px solid #bdc3c7; }
   #me .interests {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
     position: relative;
     left: 50%;
     transform: translatex(-50%);
