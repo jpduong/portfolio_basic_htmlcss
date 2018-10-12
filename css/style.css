@@ -49,6 +49,8 @@ nav {
     #home .home-container .social {
       display: grid;
       grid-template-columns: 1fr 1fr; }
+      #home .home-container .social li:hover {
+        background-color: #bdc3c7; }
 
 #work {
   position: relative;
@@ -63,7 +65,8 @@ nav {
     #work .work-container .mywork .project {
       height: 130px;
       width: 130px;
-      border: 1px solid black; }
+      border: 1px solid black;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
       #work .work-container .mywork .project.a {
         transform: rotate(-10deg); }
       #work .work-container .mywork .project.b {
@@ -116,5 +119,9 @@ a:hover {
   color: #bdc3c7; }
   a:hover:visited {
     color: #bdc3c7; }
+
+.logo {
+  width: 100px;
+  height: 100px; }
 
 /*# sourceMappingURL=style.css.map */
