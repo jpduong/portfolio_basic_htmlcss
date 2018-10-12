@@ -260,10 +260,7 @@ $shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 100%);
 
 //general classes
-.linh {
-    display: grid;
-    grid-template-columns: 1fr;
-}
+
 %center {
     position: absolute;
     left: 50%;
@@ -303,6 +300,7 @@ nav {
     background-color: $white;
     padding: 0px 50px;
     box-shadow: 0 3px 2px -2px $grey;
+    opacity: 0;
 }
 
 //pages
@@ -363,35 +361,55 @@ nav {
     text-align: center;
     height: 100vh;
     position: relative;
+        .me-container {
+            @extend %center;
     .album {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
         justify-items: center;
-            .album-item {
-                width: 100px;
-                height: 100px;
-                border: 1px solid $grey;
-            &.c {
-                position: relative;
-                left: 50%;
-                top: -10px;
-                transform: translatex(-50%);
-                width: 120px;
-                height: 120px;
+        position: relative;
+        .album-item {
+            width: 130px;
+            height: 130px;
+            border: 1px solid $grey;
+            // &.b {
+            //     transform: rotate(-10deg);
+            // }
+            // &.c {
+            //     transform: rotate(10deg);
+            // }
+        }
+            .linh {
+                position: absolute;
+                top: 15px;
+                .a {
+                    width: 100px;
+                    height: 100px;
+                    // border-radius: 50%;
+                    border: 2px solid $grey;
+                }
             }
         }
-    }
+    } 
     .interests {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-    .footer {
-        position: absolute;
-        bottom: 0%;
+        width: 33%;
+        position: relative;
         left: 50%;
         transform: translatex(-50%);
-        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .footer {
+        font-size: 8px;
+    }
+}
+
+//effects
+a:hover {
+    color: $grey;
+    &:visited {
+        color: $grey;
     }
 }
 
