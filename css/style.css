@@ -19,7 +19,8 @@ nav {
   position: fixed;
   width: 100%;
   background-color: white;
-  padding: 0px 50px; }
+  padding: 0px 50px;
+  box-shadow: 0 3px 2px -2px #bdc3c7; }
 
 * {
   box-sizing: border-box;
@@ -62,10 +63,11 @@ nav {
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    text-align: center; }
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
 
 .me {
-  background-color: white;
+  background-image: linear-gradient(to bottom, white 0%, white 50%, #bdc3c7 50%, #bdc3c7 100%);
   text-align: center;
   height: 100vh;
   position: relative; }
@@ -88,7 +90,8 @@ nav {
 
 .interests {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  background-color: #bdc3c7; }
 
 .footer {
   position: absolute;
@@ -110,5 +113,26 @@ h2 {
   padding: 30px;
   background-color: #bdc3c7;
   height: 50vh; }
+
+.album {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  justify-items: center; }
+  .album .album-item {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #bdc3c7; }
+    .album .album-item.c {
+      position: relative;
+      left: 50%;
+      top: -10px;
+      transform: translatex(-50%);
+      width: 120px;
+      height: 120px; }
+
+.test {
+  position: absolute;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
