@@ -250,13 +250,17 @@
 // //start again
 @import url("https://fonts.googleapis.com/css?family=Nunito:300");
 
+//global variables
 $grey: #bdc3c7;
 $black: black;
 $white: white;
 $cream: #F6EDE9;
 $padding: 30px;
 $shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-.test {
+$background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 100%);
+
+//general classes
+.linh {
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -266,9 +270,30 @@ $shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     top: 50%;
     transform: translate(-50%,-50%);
 }
-li {
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif; 
+    text-decoration: none;
     list-style: none;
 }
+.icon {
+    width: 15px;
+    height: 15px;
+}
+.icon-small {
+    width: 15px;
+    height: 15px;
+    margin: auto 5px;
+}
+.dp {
+    height: 150px;
+    width: 150px;
+}
+.social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+// nav
 nav {
     display: flex;
     justify-content: space-around;
@@ -279,38 +304,11 @@ nav {
     padding: 0px 50px;
     box-shadow: 0 3px 2px -2px $grey;
 }
-* {
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif; 
-}
-.icon {
-    width: 15px;
-    height: 15px;
-}
-.italics {
-    font-style: italic;
-}
-.quote {
-    position: relative;
-    top: -40vh;
-    margin: 75px;
-    background-color: $white;
-}
-.icon-small {
-    width: 15px;
-    height: 15px;
-    margin: auto 5px;
-}
-.dp {
-    height: 150px;
-    width: 150px;
-    border: 20px solid $white;
-}
-.social {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.home {
+
+//pages
+
+//home
+#home {
     height: 100vh;
     background-color: $grey;
     padding: $padding;
@@ -325,25 +323,26 @@ nav {
         box-shadow: $shadow;
     }
 }
-    .me {
-        background-image: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 100%);
-        // background-color: $white;
-        text-align: center;
-        height: 100vh;
-        position: relative;
-        
-    }
-    .work {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        grid-gap: 5px;
-        .project {
-            height: 150px;
-            width: 150px;
-            border: 1px solid black;
-            &.c {
-                grid-column-start: span 2;   
+//work 
+#work {
+    position: relative;
+    background-image: $background;
+    height: 100vh;
+    text-align: center;
+    .work-container {
+        @extend %center;
+        .mywork {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            grid-gap: 5px;
+            .project {
+                height: 150px;
+                width: 150px;
+                border: 1px solid black;
+                &.c {
+                    grid-column-start: span 2;   
+                }
             }
         }
     }
@@ -353,10 +352,39 @@ nav {
             justify-content: center;
         }
     }
+    .contact {
+        padding: $padding;
+    }
+}
+
+//me 
+#me {
+    background-image: $background;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    .album {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        justify-items: center;
+            .album-item {
+                width: 100px;
+                height: 100px;
+                border: 1px solid $grey;
+            &.c {
+                position: relative;
+                left: 50%;
+                top: -10px;
+                transform: translatex(-50%);
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
     .interests {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: $grey;
     }
     .footer {
         position: absolute;
@@ -365,40 +393,5 @@ nav {
         transform: translatex(-50%);
         font-size: 10px;
     }
-h2 {
-    margin: 0px;
-    padding: 10px;
 }
-.work-container {
-    background-color: $white;
-    height: 100vh;
-    text-align: center;
-}
-.contact {
-    padding: $padding;
-    background-color: $grey;
-    height: 50vh;
-}
-.album {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-    justify-items: center;
-        .album-item {
-            width: 100px;
-            height: 100px;
-            border: 1px solid $grey;
-        &.c {
-            position: relative;
-            left: 50%;
-            top: -10px;
-            transform: translatex(-50%);
-            width: 120px;
-            height: 120px;
-        }
-    }
-}
-.test {
-    position: absolute;
-    width: 100%;
-}
+
