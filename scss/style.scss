@@ -280,11 +280,6 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
         background-color: $white;
     }
 }
-// img {
-//     border-radius: 50%;
-//     border: 1px solid black;
-//     margin: 2px;
-// }
 .icon-small {
     width: 12px;
     height: 12px;
@@ -294,12 +289,39 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
     height: 150px;
     width: 150px;
 }
+// loader
+.loader {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        img {
+            width: 100px;
+        }
+}
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 
 // nav
 nav {
     display: flex;
     justify-content: space-around;
-    z-index: 99;
+    z-index: 98;
     position: fixed;
     width: 100%;
     background-color: $white;
@@ -346,8 +368,8 @@ nav {
             justify-items: center;
             grid-gap: 5px;
             .project {
-                height: 130px;
-                width: 130px;
+                height: 100px;
+                width: 100px;
                 border: 1px solid black;
                 box-shadow: $shadow;
                 &.a {
