@@ -14,6 +14,8 @@
 .icon {
   width: 20px;
   height: 20px; }
+  .icon:hover {
+    background-color: white; }
 
 .icon-small {
   width: 12px;

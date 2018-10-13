@@ -276,7 +276,15 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
 .icon {
     width: 20px;
     height: 20px;
+    &:hover {
+        background-color: $white;
+    }
 }
+// img {
+//     border-radius: 50%;
+//     border: 1px solid black;
+//     margin: 2px;
+// }
 .icon-small {
     width: 12px;
     height: 12px;
