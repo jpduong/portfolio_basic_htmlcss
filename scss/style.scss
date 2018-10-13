@@ -276,9 +276,6 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
 .icon {
     width: 20px;
     height: 20px;
-    &:hover {
-        background-color: $white;
-    }
 }
 .icon-small {
     width: 12px;
@@ -361,15 +358,16 @@ nav {
     height: 100vh;
     text-align: center;
     .work-container {
+        padding: $padding;
+        box-shadow: $shadow;
         @extend %center;
         .mywork {
             display: grid;
             grid-template-columns: 1fr 1fr;
             justify-items: center;
-            grid-gap: 5px;
             .project {
-                height: 100px;
-                width: 100px;
+                height: 130px;
+                width: 130px;
                 border: 1px solid black;
                 box-shadow: $shadow;
                 &.a {
@@ -406,6 +404,8 @@ nav {
     height: 100vh;
     position: relative;
         .me-container {
+            padding: $padding;
+            box-shadow: $shadow;
             @extend %center;
     .album {
         display: grid;
@@ -415,7 +415,8 @@ nav {
         .album-item {
             width: 130px;
             height: 130px;
-            border: 1px solid $grey;
+            // border: 1px solid $grey;
+            box-shadow: $shadow;
         }
             .linh {
                 position: absolute;
@@ -423,7 +424,7 @@ nav {
                 .a {
                     width: 100px;
                     height: 100px;
-                    border: 2px solid $grey;
+                    // border: 2px solid $grey;
                 }
             }
         }
@@ -438,12 +439,11 @@ nav {
         margin-bottom: 20px;
     }
     .footer {
-        font-size: 8px;
+        font-size: 50%
     }
 }
 
 //effects
-
 a:visited {
         color: $black;
 }
@@ -451,8 +451,46 @@ a:hover {
         color: $grey;
 }
 
-
-.logo {
-    width: 100px;
-    height: 100px;
-}
+//media queries
+//ipad
+// @media only screen and (min-width: 768px) {
+    
+//     body {  
+//         font-size: 150%;
+//     }
+//     .icon {
+//         height: 40px;
+//         width: 40px;
+//     }
+//     .dp {
+//         height: 300px;
+//         width: 300px;
+//     }
+//     .icon-small {
+//         width: 24px;
+//         height: 24px;
+//         margin: 10px 10px;
+//     }
+//     #work .work-container .mywork {
+//             .project {
+//                 height: 260px;
+//                 width: 260px;
+//             }
+//         }
+    
+//     #me .me-container .album { 
+//         .album-item {
+//             width: 300px;
+//             height: 300px;
+//             border: 2px solid $grey;
+//         }
+//         .linh {
+//             top: 50px;
+//             .a {
+//                 width: 200px;
+//                 height: 200px;
+//                 border: 4px solid $grey;
+//             }
+//         }
+//     }
+// }
