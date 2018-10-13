@@ -140,10 +140,11 @@ nav {
   #me .footer {
     font-size: 8px; }
 
+a:visited {
+  color: black; }
+
 a:hover {
   color: #bdc3c7; }
-  a:hover:visited {
-    color: #bdc3c7; }
 
 .logo {
   width: 100px;
