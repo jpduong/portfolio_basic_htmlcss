@@ -54,7 +54,6 @@ nav {
   position: fixed;
   width: 100%;
   background-color: white;
-  padding: 0px 50px;
   box-shadow: 0 3px 2px -2px #bdc3c7; }
 
 #home {
@@ -147,5 +146,19 @@ a:visited {
 
 a:hover {
   color: #bdc3c7; }
+
+@media only screen and (min-width: 768px) {
+  #home .home-container {
+    padding: 100px; }
+
+  #work .work-container {
+    padding: 100px; }
+
+  #me .me-container {
+    padding: 100px; }
+
+  .dp {
+    height: 180px;
+    width: 180px; } }
 
 /*# sourceMappingURL=style.css.map */
