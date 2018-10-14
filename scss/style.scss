@@ -322,6 +322,7 @@ nav {
     position: fixed;
     width: 100%;
     background-color: $white;
+    // background-color: rgba(255,255,255,0.1);
     // padding: 0px 50px;
     box-shadow: 0 3px 2px -2px $grey;
     li {
@@ -364,6 +365,7 @@ nav {
     .work-container {
         padding: $padding;
         box-shadow: $shadow;
+        background-color:$white;
         @extend %center;
         .mywork {
             display: grid;
@@ -410,6 +412,7 @@ nav {
         .me-container {
             padding: $padding;
             box-shadow: $shadow;
+            background-color: $white;
             @extend %center;
     .album {
         display: grid;
@@ -419,8 +422,9 @@ nav {
         .album-item {
             width: 130px;
             height: 130px;
-            // border: 1px solid $grey;
-            box-shadow: $shadow;
+            border: 2px solid $white;
+            border-right: 1px;
+            // box-shadow: $shadow;
         }
             .linh {
                 position: absolute;
@@ -428,7 +432,7 @@ nav {
                 .a {
                     width: 100px;
                     height: 100px;
-                    // border: 2px solid $grey;
+                    border: 2px solid $white;
                 }
             }
         }
@@ -457,7 +461,7 @@ a:hover {
 
 
 @media only screen and (min-width: 768px) {
-    $padding: 100px 100px;
+    $padding: 50px 100px;
     #home .home-container {
         padding: $padding;
     }
@@ -468,8 +472,8 @@ a:hover {
         padding: $padding;
     }
     .dp {
-        height: 180px;
-        width: 180px;
+        height: 250px;
+        width: 250px;
     }
     h1, h2 {
         letter-spacing: 1mm;
@@ -477,7 +481,26 @@ a:hover {
     nav li {
         padding: 20px 40px;  
     }
+    #me .me-container {
+        margin-top: 30px;
+        .album { 
+            .album-item {
+                height: 260px;
+                width: 260px;
+                // border: 2px solid $white;
+            }
+            .linh {
+                top: 30px;
+                .a {
+                    width: 200px;
+                    height: 200px;
+                    // border: 4px solid $white;
+                }
+            }
+        }
+    }
 }
+
 
 // @media only screen and (min-width: 1440px) {
 //     $padding: 120px;
