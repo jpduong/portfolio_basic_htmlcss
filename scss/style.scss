@@ -317,14 +317,18 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
 // nav
 nav {
     display: flex;
-    justify-content: space-around;
-    z-index: 98;
+    justify-content: center;
+    z-index: 99;
     position: fixed;
     width: 100%;
     background-color: $white;
     // padding: 0px 50px;
     box-shadow: 0 3px 2px -2px $grey;
+    li {
+        padding: 20px;  
+    }
 }
+
 
 //pages
 
@@ -453,7 +457,7 @@ a:hover {
 
 
 @media only screen and (min-width: 768px) {
-    $padding: 100px;
+    $padding: 100px 100px;
     #home .home-container {
         padding: $padding;
     }
@@ -466,6 +470,12 @@ a:hover {
     .dp {
         height: 180px;
         width: 180px;
+    }
+    h1, h2 {
+        letter-spacing: 1mm;
+    }
+    nav li {
+        padding: 20px 40px;  
     }
 }
 

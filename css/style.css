@@ -49,12 +49,14 @@
     visibility: hidden; } }
 nav {
   display: flex;
-  justify-content: space-around;
-  z-index: 98;
+  justify-content: center;
+  z-index: 99;
   position: fixed;
   width: 100%;
   background-color: white;
   box-shadow: 0 3px 2px -2px #bdc3c7; }
+  nav li {
+    padding: 20px; }
 
 #home {
   height: 100vh;
@@ -149,16 +151,22 @@ a:hover {
 
 @media only screen and (min-width: 768px) {
   #home .home-container {
-    padding: 100px; }
+    padding: 100px 100px; }
 
   #work .work-container {
-    padding: 100px; }
+    padding: 100px 100px; }
 
   #me .me-container {
-    padding: 100px; }
+    padding: 100px 100px; }
 
   .dp {
     height: 180px;
-    width: 180px; } }
+    width: 180px; }
+
+  h1, h2 {
+    letter-spacing: 1mm; }
+
+  nav li {
+    padding: 20px 40px; } }
 
 /*# sourceMappingURL=style.css.map */
