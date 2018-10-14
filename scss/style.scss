@@ -322,6 +322,7 @@ nav {
     z-index: 98;
     position: fixed;
     width: 100%;
+    // height: 40px;
     background-color: $white;
     // background-color: rgba(255,255,255,0.1);
     // padding: 0px 50px;
@@ -349,6 +350,7 @@ a:hover {
     background-color: $grey;
     padding: $padding;
     .home-container {
+        margin-top: 29px;
         background-color: $white;
         display: flex;
         flex-direction: column;
@@ -373,6 +375,8 @@ a:hover {
     height: 100vh;
     text-align: center;
     .work-container {
+        // margin-top: 29px;
+        border: 1px solid green;
         padding: $padding;
         // background-color: $white;
         // box-shadow: $shadow;
@@ -422,8 +426,10 @@ a:hover {
     position: relative;
         .me-container {
             padding: $padding;
+            // margin-top: 29px;
             // box-shadow: $shadow;
             // background-color: $white;
+            border: 1px solid green;
             @extend %center;
         .album {
             display: grid;
@@ -474,7 +480,7 @@ a:hover {
 
 
 @media only screen and (min-width: 768px) {
-    $padding: 50px 100px;
+    $padding: 80px 80px;
     #home .home-container {
         padding: $padding;
     }
