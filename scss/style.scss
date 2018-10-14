@@ -258,9 +258,9 @@ $cream: #F6EDE9;
 $padding: 30px;
 $shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 100%);
+$margin-top: 29px;
 
 //general classes
-
 %center {
     position: absolute;
     left: 50%;
@@ -322,10 +322,8 @@ nav {
     z-index: 98;
     position: fixed;
     width: 100%;
-    // height: 40px;
+    height: 58px;
     background-color: $white;
-    // background-color: rgba(255,255,255,0.1);
-    // padding: 0px 50px;
     box-shadow: 0 3px 2px -2px $grey;
     li {
         padding: 20px; 
@@ -339,7 +337,6 @@ a:visited {
 }
 a:hover {
     color: $grey;
-    // background-color: $grey;
 }
 
 //pages
@@ -350,7 +347,7 @@ a:hover {
     background-color: $grey;
     padding: $padding;
     .home-container {
-        margin-top: 29px;
+        margin-top: $margin-top;
         background-color: $white;
         display: flex;
         flex-direction: column;
@@ -375,11 +372,7 @@ a:hover {
     height: 100vh;
     text-align: center;
     .work-container {
-        // margin-top: 29px;
-        border: 1px solid green;
-        padding: $padding;
-        // background-color: $white;
-        // box-shadow: $shadow;
+        margin-top: $margin-top;
         @extend %center;
         .mywork {
             display: grid;
@@ -400,23 +393,20 @@ a:hover {
             }
         }
     }
-    .languages {
-        h3 {
-            padding-top: 20px;
-        }
-        .languages-icons {
-            display: flex;
-            justify-content: space-between;
-            width: 50%;
-            position: relative;
-            left: 50%;
-            transform: translatex(-50%);
+        .languages {
+            h3 {
+                padding-top: 20px;
+            }
+            .languages-icons {
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+                position: relative;
+                left: 50%;
+                transform: translatex(-50%);
+            }
         }
     }
-    .contact {
-        padding: $padding;
-    }
-}
 
 //me 
 #me {
@@ -425,62 +415,67 @@ a:hover {
     height: 100vh;
     position: relative;
         .me-container {
-            padding: $padding;
-            // margin-top: 29px;
-            // box-shadow: $shadow;
-            // background-color: $white;
-            border: 1px solid green;
+            margin-top: $margin-top;
             @extend %center;
-        .album {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-items: center;
-            position: relative;
-            .album-item {
-                width: 130px;
-                height: 130px;
-                border: 2px solid $grey;
-                // box-shadow: $shadow;
-            }
-            .b {
-                border-right: 1px solid $grey;
-            }
-            .c {
-                border-left: 1px solid $grey;
-            }
-            .linh {
-                position: absolute;
-                top: 15px;
-                .a {
-                    width: 100px;
-                    height: 100px;
+            .album {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                position: relative;
+                .album-item {
+                    width: 130px;
+                    height: 130px;
                     border: 2px solid $grey;
                 }
+                .b {
+                    border-right: 1px solid $grey;
+                }
+                .b:hover {
+                    z-index: 99;
+                    border: 2px solid gold;
+                }
+                .b:hover::after {
+                    content: 'hello';
+                    background-color: white;
+                }
+                .c {
+                    border-left: 1px solid $grey;
+                }
+                .c:hover{
+                    z-index: 99;
+                    border: 2px solid gold;
+                }
+                .linh {
+                    position: absolute;
+                    top: 15px;
+                    .a {
+                        width: 100px;
+                        height: 100px;
+                        border: 2px solid $grey;
+                    }
+                }
+            }
+        } 
+            .interests {
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+                position: relative;
+                left: 50%;
+                transform: translatex(-50%);
+                margin-bottom: 20px;
+            }
+            .footer {
+                font-size: 50%
+            }
+            .footer a:hover {
+                color: white;
             }
         }
-    } 
-    .interests {
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-        position: relative;
-        left: 50%;
-        transform: translatex(-50%);
-        margin-bottom: 20px;
-    }
-    .footer {
-        font-size: 50%
-    }
-        .footer a:hover {
-            color: white;
-        }
-    }
 
-
-
-
+//media queries
 @media only screen and (min-width: 768px) {
-    $padding: 80px 80px;
+    // $padding: 100px 100px;
     #home .home-container {
         padding: $padding;
     }
@@ -505,80 +500,19 @@ a:hover {
         width: 260px;
     }
     #me .me-container {
-        margin-top: 30px;
         .album { 
             .album-item {
-                height: 260px;
-                width: 260px;
-                // border: 2px solid $white;
+                height: 250px;
+                width: 250px;
             }
             .linh {
-                top: 30px;
+                // top: 25px;
                 .a {
-                    width: 200px;
-                    height: 200px;
-                    // border: 4px solid $white;
+                    width: 250px;
+                    height: 250px;
                 }
             }
         }
     }
 }
 
-
-// @media only screen and (min-width: 1440px) {
-//     $padding: 120px;
-//     #home .home-container {
-//         padding: $padding;
-//     }
-//     #work .work-container {
-//         padding: $padding;
-//     }
-//     #me .me-container {
-//         padding: $padding;
-//     }
-// }
-
-
-//media queries
-//ipad
-// @media only screen and (min-width: 768px) {
-    
-//     body {  
-//         font-size: 150%;
-//     }
-//     .icon {
-//         height: 40px;
-//         width: 40px;
-//     }
-//     .dp {
-//         height: 300px;
-//         width: 300px;
-//     }
-//     .icon-small {
-//         width: 24px;
-//         height: 24px;
-//         margin: 10px 10px;
-//     }
-//     #work .work-container .mywork {
-//             .project {
-//                 height: 260px;
-//                 width: 260px;
-//             }
-//         }
-    
-//     #me .me-container .album { 
-//         .album-item {
-//             width: 300px;
-//             height: 300px;
-//             border: 2px solid $grey;
-//         }
-//         .linh {
-//             top: 50px;
-//             .a {
-//                 width: 200px;
-//                 height: 200px;
-//                 border: 4px solid $grey;
-//             }
-//         }
-//     }
-// }
