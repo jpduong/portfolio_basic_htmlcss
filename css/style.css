@@ -50,13 +50,19 @@
 nav {
   display: flex;
   justify-content: center;
-  z-index: 99;
+  z-index: 98;
   position: fixed;
   width: 100%;
   background-color: white;
   box-shadow: 0 3px 2px -2px #bdc3c7; }
   nav li {
     padding: 20px; }
+
+a:visited {
+  color: black; }
+
+a:hover {
+  color: #bdc3c7; }
 
 #home {
   height: 100vh;
@@ -82,9 +88,7 @@ nav {
   height: 100vh;
   text-align: center; }
   #work .work-container {
-    padding: 30px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    background-color: white; }
+    padding: 30px; }
     #work .work-container .mywork {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -116,9 +120,7 @@ nav {
   height: 100vh;
   position: relative; }
   #me .me-container {
-    padding: 30px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    background-color: white; }
+    padding: 30px; }
     #me .me-container .album {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -146,12 +148,8 @@ nav {
     margin-bottom: 20px; }
   #me .footer {
     font-size: 50%; }
-
-a:visited {
-  color: black; }
-
-a:hover {
-  color: #bdc3c7; }
+  #me .footer a:hover {
+    color: white; }
 
 @media only screen and (min-width: 768px) {
   #home .home-container {

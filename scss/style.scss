@@ -318,7 +318,7 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
 nav {
     display: flex;
     justify-content: center;
-    z-index: 99;
+    z-index: 98;
     position: fixed;
     width: 100%;
     background-color: $white;
@@ -326,10 +326,19 @@ nav {
     // padding: 0px 50px;
     box-shadow: 0 3px 2px -2px $grey;
     li {
-        padding: 20px;  
+        padding: 20px; 
     }
 }
 
+
+//effects
+a:visited {
+    color: $black;
+}
+a:hover {
+    color: $grey;
+    // background-color: $grey;
+}
 
 //pages
 
@@ -364,8 +373,8 @@ nav {
     text-align: center;
     .work-container {
         padding: $padding;
-        box-shadow: $shadow;
-        background-color:$white;
+        // background-color: $white;
+        // box-shadow: $shadow;
         @extend %center;
         .mywork {
             display: grid;
@@ -411,21 +420,21 @@ nav {
     position: relative;
         .me-container {
             padding: $padding;
-            box-shadow: $shadow;
-            background-color: $white;
-            @extend %center;
-    .album {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        position: relative;
-        .album-item {
-            width: 130px;
-            height: 130px;
-            border: 2px solid $white;
-            border-right: 1px;
             // box-shadow: $shadow;
-        }
+            // background-color: $white;
+            @extend %center;
+        .album {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            position: relative;
+            .album-item {
+                width: 130px;
+                height: 130px;
+                border: 2px solid $white;
+                border-right: 1px;
+                // box-shadow: $shadow;
+            }
             .linh {
                 position: absolute;
                 top: 15px;
@@ -449,15 +458,12 @@ nav {
     .footer {
         font-size: 50%
     }
-}
+        .footer a:hover {
+            color: white;
+        }
+    }
 
-//effects
-a:visited {
-        color: $black;
-}
-a:hover {
-        color: $grey;
-}
+
 
 
 @media only screen and (min-width: 768px) {
