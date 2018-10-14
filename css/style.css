@@ -133,13 +133,17 @@ a:hover {
         height: 130px;
         border: 2px solid #bdc3c7; }
       #me .me-container .album .b {
-        border-right: 1px solid #bdc3c7; }
+        border-right: 1px solid #bdc3c7;
+        background: url("../resources/india.jpg");
+        background-position: center;
+        background-size: cover; }
       #me .me-container .album .b:hover {
-        z-index: 99;
-        border: 2px solid gold; }
-      #me .me-container .album .b:hover::after {
-        content: 'hello';
-        background-color: white; }
+        content: 'india';
+        color: white;
+        background: url("../resources/india.jpg");
+        background-position: center;
+        background-size: cover;
+        z-index: 98; }
       #me .me-container .album .c {
         border-left: 1px solid #bdc3c7; }
       #me .me-container .album .c:hover {

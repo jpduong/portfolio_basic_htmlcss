@@ -429,14 +429,36 @@ a:hover {
                 }
                 .b {
                     border-right: 1px solid $grey;
+                    background: url('../resources/india.jpg');
+                    background-position: center;
+                    background-size: cover;
                 }
+                // .b:hover {
+                //     z-index: 98;
+                //     border: 2px solid gold;
+                //     content: 'india';
+                //     display: block;
+                //     background: white;
+                // }
                 .b:hover {
-                    z-index: 99;
-                    border: 2px solid gold;
-                }
-                .b:hover::after {
-                    content: 'hello';
-                    background-color: white;
+                    content: 'india';
+                    color: white;
+                    background: url('../resources/india.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    z-index: 98;
+                    // content: 'test';
+                    // z-index: 98;
+                    // content: attr(data-text);
+                    // display: block;
+                    // position: absolute;
+                    // top: 0;
+                    // left: 0;
+                    // background-color: white;
+                    // opacity: 1;
+                    // top: 0px;
+                    
+                    
                 }
                 .c {
                     border-left: 1px solid $grey;
