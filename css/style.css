@@ -6,6 +6,7 @@
   transform: translate(-50%, -50%); }
 
 * {
+  color: black;
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
   text-decoration: none;
@@ -94,6 +95,7 @@ a:hover {
       grid-template-columns: 1fr 1fr;
       justify-items: center; }
       #work .work-container .mywork .project {
+        margin-top: 20px;
         height: 130px;
         width: 130px;
         border: 1px solid black;
@@ -129,15 +131,18 @@ a:hover {
       #me .me-container .album .album-item {
         width: 130px;
         height: 130px;
-        border: 2px solid white;
-        border-right: 1px; }
+        border: 2px solid #bdc3c7; }
+      #me .me-container .album .b {
+        border-right: 1px solid #bdc3c7; }
+      #me .me-container .album .c {
+        border-left: 1px solid #bdc3c7; }
       #me .me-container .album .linh {
         position: absolute;
         top: 15px; }
         #me .me-container .album .linh .a {
           width: 100px;
           height: 100px;
-          border: 2px solid white; }
+          border: 2px solid #bdc3c7; }
   #me .interests {
     display: flex;
     justify-content: space-between;
@@ -170,6 +175,10 @@ a:hover {
 
   nav li {
     padding: 20px 40px; }
+
+  #work .work-container .bio .mywork .project {
+    height: 260px;
+    width: 260px; }
 
   #me .me-container {
     margin-top: 30px; }
