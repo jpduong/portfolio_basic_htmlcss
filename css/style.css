@@ -113,6 +113,10 @@ a:visited {
     left: 50%;
     transform: translatex(-50%); }
 
+.test {
+  background-position: center;
+  background-size: cover; }
+
 #me {
   background-image: linear-gradient(to bottom, white 0%, white 50%, #bdc3c7 50%, #bdc3c7 100%);
   text-align: center;
@@ -133,6 +137,10 @@ a:visited {
         background: url("../resources/linh.jpg");
         background-position: center;
         background-size: cover; }
+      #me .me-container .album .a:hover {
+        background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("../resources/linh.jpg");
+        background-size: cover;
+        background-position: center; }
       #me .me-container .album .a:hover::after {
         content: 'tam coc, vietnam';
         color: white;
@@ -140,25 +148,28 @@ a:visited {
         top: 50%; }
       #me .me-container .album .b {
         background: url("../resources/india.jpg");
-        background-position: center;
-        background-size: cover; }
+        background-size: cover;
+        background-position: center; }
       #me .me-container .album .b:hover {
         z-index: 98;
         background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("../resources/india.jpg");
-        background-position: center;
-        background-size: cover; }
+        background-size: cover;
+        background-position: center; }
       #me .me-container .album .b:hover::after {
-        content: 'spiti valley,india';
+        content: 'spiti valley, india';
         color: white;
         position: relative;
         top: 50%; }
       #me .me-container .album .c {
         background: url("../resources/hanoi.jpg");
-        background-position: center;
         background-size: cover;
+        background-position: center;
         border-left: 1px solid #bdc3c7; }
       #me .me-container .album .c:hover {
-        z-index: 99; }
+        z-index: 98;
+        background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("../resources/hanoi.jpg");
+        background-size: cover;
+        background-position: center; }
       #me .me-container .album .c:hover::after {
         content: 'hanoi, vietnam';
         color: white;

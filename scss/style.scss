@@ -286,9 +286,8 @@ $margin-top: 29px;
 .dp {
     height: 150px;
     width: 150px;
-    // border: 4px solid white;
-    // border-radius: 50%;
 }
+
 // loader
 .loader {
     z-index: 99;
@@ -412,6 +411,11 @@ a:hover {
     }
 
 //me 
+.test {
+    background-position: center;
+    background-size: cover;  
+}
+
 #me {
     background-image: $background;
     text-align: center;
@@ -435,6 +439,14 @@ a:hover {
                     background-position: center;
                     background-size: cover;    
                 }
+                .a:hover {
+                    background: linear-gradient(
+                        rgba(20,20,20, .5), 
+                        rgba(20,20,20, .5)),
+                        url('../resources/linh.jpg');
+                        background-size: cover;
+                        background-position: center;
+                }
                 .a:hover::after {
                     content: 'tam coc, vietnam';
                     color: $white;
@@ -443,32 +455,40 @@ a:hover {
                 }
                 .b {
                     background: url('../resources/india.jpg');
-                    background-position: center;
                     background-size: cover;
+                    background-position: center;
                 }
                 .b:hover {
+                    // @extend %image;
                     z-index: 98;
                     background: linear-gradient(
                         rgba(20,20,20, .5), 
                         rgba(20,20,20, .5)),
                         url('../resources/india.jpg');
-                        background-position: center;
                         background-size: cover;
+                        background-position: center;
+                        
                 }
                 .b:hover::after {
-                    content: 'spiti valley,india';
+                    content: 'spiti valley, india';
                     color: $white;
                     position: relative;
                     top: 50%;
                 }
                 .c {
                     background: url('../resources/hanoi.jpg');
-                    background-position: center;
                     background-size: cover;
+                    background-position: center;
                     border-left: 1px solid $grey;
                 }
                 .c:hover {
-                    z-index: 99;
+                    z-index: 98;
+                    background: linear-gradient(
+                        rgba(20,20,20, .5), 
+                        rgba(20,20,20, .5)),
+                        url('../resources/hanoi.jpg');
+                        background-size: cover;
+                        background-position: center;
                 }
                 .c:hover::after {
                     content: 'hanoi, vietnam';
