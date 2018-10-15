@@ -63,6 +63,9 @@ nav {
 a:visited {
   color: black; }
 
+a:hover {
+  color: #bdc3c7; }
+
 #home {
   height: 100vh;
   background-color: #bdc3c7;
@@ -138,7 +141,7 @@ a:visited {
         background-position: center;
         background-size: cover; }
       #me .me-container .album .a:hover {
-        background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("../resources/linh.jpg");
+        background: linear-gradient(rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.3)), url("../resources/linh.jpg");
         background-size: cover;
         background-position: center; }
       #me .me-container .album .a:hover::after {
@@ -152,7 +155,7 @@ a:visited {
         background-position: center; }
       #me .me-container .album .b:hover {
         z-index: 98;
-        background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("../resources/india.jpg");
+        background: linear-gradient(rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.3)), url("../resources/india.jpg");
         background-size: cover;
         background-position: center; }
       #me .me-container .album .b:hover::after {
@@ -167,7 +170,7 @@ a:visited {
         border-left: 1px solid #bdc3c7; }
       #me .me-container .album .c:hover {
         z-index: 98;
-        background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("../resources/hanoi.jpg");
+        background: linear-gradient(rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.3)), url("../resources/hanoi.jpg");
         background-size: cover;
         background-position: center; }
       #me .me-container .album .c:hover::after {
