@@ -159,6 +159,7 @@ a:hover {
         }
     }
         .languages {
+            margin-bottom: 40px;
             h3 {
                 padding-top: 20px;
             }
@@ -188,6 +189,7 @@ a:hover {
             margin-top: $margin-top;
             @extend %center;
             .album {
+                margin-bottom: 40px;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 justify-items: center;
@@ -327,12 +329,15 @@ a:hover {
                 height: 250px;
                 width: 250px;
             }
-            .linh .a {
-                    width: 250px;
-                    height: 250px;
+            .linh {
+                // top: 10px;
+                .a {
+                    width: 220px;
+                    height: 220px;
                 }
             }
         }
     }
+}
 
 

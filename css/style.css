@@ -112,15 +112,17 @@ a:hover {
           transform: rotate(10deg); }
         #work .work-container .mywork .project.b:hover {
           transform: rotate(10deg) scale(1.1); }
-  #work .languages h3 {
-    padding-top: 20px; }
-  #work .languages .languages-icons {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    position: relative;
-    left: 50%;
-    transform: translatex(-50%); }
+  #work .languages {
+    margin-bottom: 40px; }
+    #work .languages h3 {
+      padding-top: 20px; }
+    #work .languages .languages-icons {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      position: relative;
+      left: 50%;
+      transform: translatex(-50%); }
 
 .test {
   background-position: center;
@@ -134,6 +136,7 @@ a:hover {
   #me .me-container {
     margin-top: 29px; }
     #me .me-container .album {
+      margin-bottom: 40px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-items: center;
@@ -241,7 +244,7 @@ a:hover {
     height: 250px;
     width: 250px; }
   #me .me-container .album .linh .a {
-    width: 250px;
-    height: 250px; } }
+    width: 220px;
+    height: 220px; } }
 
 /*# sourceMappingURL=style.css.map */
