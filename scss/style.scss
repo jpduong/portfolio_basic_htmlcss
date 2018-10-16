@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:300");
+@import url('https://fonts.googleapis.com/css?family=Nunito:300');
 
 //global variables
 $grey: #bdc3c7;
@@ -136,13 +136,24 @@ a:hover {
                 margin-top: 20px;
                 height: 130px;
                 width: 130px;
-                border: 1px solid black;
-                box-shadow: $shadow;
+                // border: 1px solid black;
+                // box-shadow: $shadow;
                 &.a {
                     transform: rotate(-10deg);
+                    background: url('../resources/A.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+                &.a:hover {
+                    transform: rotate(-10deg) scale(1.1);
                 }
                 &.b {
                     transform: rotate(10deg);
+                }
+                &.b:hover {
+                    transform: rotate(10deg) scale(1.1);
+                    
                 }
             }
         }

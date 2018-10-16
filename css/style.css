@@ -99,13 +99,19 @@ a:hover {
       #work .work-container .mywork .project {
         margin-top: 20px;
         height: 130px;
-        width: 130px;
-        border: 1px solid black;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2); }
+        width: 130px; }
         #work .work-container .mywork .project.a {
-          transform: rotate(-10deg); }
+          transform: rotate(-10deg);
+          background: url("../resources/A.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat; }
+        #work .work-container .mywork .project.a:hover {
+          transform: rotate(-10deg) scale(1.1); }
         #work .work-container .mywork .project.b {
           transform: rotate(10deg); }
+        #work .work-container .mywork .project.b:hover {
+          transform: rotate(10deg) scale(1.1); }
   #work .languages h3 {
     padding-top: 20px; }
   #work .languages .languages-icons {
