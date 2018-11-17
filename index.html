@@ -99,10 +99,14 @@
                     <!-- <p>if you would like to connect, please email me at <br> james.duong93@gmail.com.</p> -->
                     <p>
                         <form method="POST" action="https://formspree.io/james.duong93@gmail.com">
-                            <input type="text" name="name" placeholder="name">
-                            <input type="email" name="email" placeholder="Your email">
-                            <textarea name="message" placeholder="Test Message"></textarea>
-                            <button type="submit">Send Test</button>
+                            <input type="text" name="name" placeholder="name" required>
+                            <br>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <br>
+                            <textarea name="message" placeholder="Test Message" required rows="4"></textarea>
+                            <br>
+                            <input type="hidden" name="_next" value="https://jamesphongduong.github.io/" />
+                            <button type="submit">send</button>
                           </form>
                     </p>
             </div>
