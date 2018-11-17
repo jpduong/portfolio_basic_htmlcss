@@ -30,6 +30,9 @@
             loader.className += ' hidden';
         });
     </script>
+
+    <!-- test -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- nav bar -->
     <nav>
         <li> <a href='#home'>home</a> </li>
@@ -95,20 +98,21 @@
             </div>
 
             <div class='contact'>
-                    <h3>contact</h3>
-                    <!-- <p>if you would like to connect, please email me at <br> james.duong93@gmail.com.</p> -->
-                    <p>
-                        <form method="POST" action="https://formspree.io/james.duong93@gmail.com">
-                            <input type="text" name="name" placeholder="name" required>
-                            <br>
-                            <input type="email" name="email" placeholder="Your email" required>
-                            <br>
-                            <textarea name="message" placeholder="Test Message" required rows="4"></textarea>
-                            <br>
-                            <input type="hidden" name="_next" value="https://jamesphongduong.github.io/" />
-                            <button type="submit">send</button>
-                          </form>
-                    </p>
+                    <h3>contact me</h3>
+                        <p>
+                            <form method="POST" action="https://formspree.io/james.duong93@gmail.com">
+                                <input type="text" name="name" placeholder="name" required>
+                                <br>
+                                <input type="email" name="email" placeholder="email" required>
+                                <br>
+                                <textarea name="message" placeholder="message" required rows="4"></textarea>
+                                <br>
+                                <input type="hidden" name="_next" value="https://jamesphongduong.github.io/" />
+                                <input type="text" name="_gotcha" style="display:none" />
+                                <input type="hidden" name="_subject" value="New submission!" />
+                                <button type="submit">send</button>
+                            </form>
+                        </p>
             </div>
         </div>
     </div>
