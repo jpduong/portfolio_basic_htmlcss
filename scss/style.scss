@@ -24,6 +24,7 @@ $margin-top: 29px;
     font-family: 'Nunito', sans-serif; 
     text-decoration: none;
     list-style: none;
+    line-height: 2;
 }
 .icon {
     width: 20px;
@@ -124,7 +125,6 @@ a:hover {
 //work 
 #work {
     height: 100vh;
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,9 +132,9 @@ a:hover {
     background: $background;
 }
 //me 
-.test {
-    line-height: 2;
-}
+// .test {
+//     line-height: 2;
+// }
 #me {
     // background: grey;
     background: $background;
@@ -155,7 +155,10 @@ a:hover {
             align-items: center;   
             text-align: center;
             background: $background;
- }
+    div {
+            margin: 20px;
+    }
+}
 //media queries
 @media only screen and (min-width: 768px) {
     #home { 
@@ -192,26 +195,7 @@ a:hover {
         height: 260px;
         width: 260px;
     }
-    // #me .me-container {
-    //     border: 1px solid green;
-    //     .album { 
-    //         .album-item {
-    //             height: 250px;
-    //             width: 250px;
-    //         }
-    //         .linh {
-    //             // top: 10px;
-    //             .a {
-    //                 width: 220px;
-    //                 height: 220px;
-    //             }
-    //         }
-    //     }
-    // }
 }
-// .contact {
-//     border: 1px solid purple;
-// }
 .text {
     width: 100px;
 }
@@ -230,4 +214,22 @@ h2 {
     width: 30vw;
     justify-content: space-around;
     // border: 1px solid black;
+}
+.project-container {
+    width: 100%;
+    display: flex;
+    // border: 1px solid green;
+    justify-content: space-around;
+        div {
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            border: 1px solid grey;
+        }
+}
+.languages {
+    display: flex;
+    width: 50vw;
+    // border: 1px solid black;
+    justify-content: space-between;
 }
