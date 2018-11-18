@@ -7,7 +7,8 @@ $white: white;
 $cream: #F6EDE9;
 $padding: 30px;
 $shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-$background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 100%);
+// $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 100%);
+$background: green;
 $margin-top: 29px;
 //#eef1f5
 
@@ -68,20 +69,22 @@ $margin-top: 29px;
 }
 
 // nav
-nav {
+#navbar {
     display: flex;
     justify-content: center;
+    align-items: center;
     z-index: 98;
     position: fixed;
+    top: 0;
     width: 100%;
-    height: 58px;
+    height: 50px;
     background-color: $white;
     box-shadow: 0 3px 2px -2px $grey;
+    transition: top 0.3s;
     li {
-        padding: 20px; 
+        padding: 25px; 
     }
 }
-
 
 //effects
 a:visited {
@@ -125,9 +128,10 @@ a:hover {
     background-image: $background;
     height: 100vh;
     text-align: center;
+    border: 1px solid green;
     .work-container {
-        margin-top: $margin-top;
-        @extend %center;
+        // margin-top: $margin-top;
+        // @extend %center;
         .mywork {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -187,7 +191,7 @@ a:hover {
     position: relative;
         .me-container {
             margin-top: $margin-top;
-            @extend %center;
+            // @extend %center;
             .album {
                 margin-bottom: 40px;
                 display: grid;
@@ -324,6 +328,7 @@ a:hover {
         width: 260px;
     }
     #me .me-container {
+        border: 1px solid green;
         .album { 
             .album-item {
                 height: 250px;
@@ -339,5 +344,23 @@ a:hover {
         }
     }
 }
+.contact {
+    border: 1px solid purple;
+}
+.text {
+    width: 100px;
+}
 
-
+//carousel
+.small {
+    width: 150px;
+    height: 150px;
+}
+#contact {
+    height: 100vh;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: center;
+}
