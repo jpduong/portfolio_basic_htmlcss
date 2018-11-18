@@ -89,7 +89,7 @@ a:hover {
       #home .home-container .social li:hover {
         background-color: #bdc3c7; }
 
-#work {
+#projects {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -119,6 +119,15 @@ a:hover {
   #contact div {
     margin: 20px; }
 
+.t img {
+  border: 2px solid white; }
+
+.input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #bdc3c7;
+  resize: none; }
+
 @media only screen and (min-width: 768px) {
   #home {
     background-color: white;
@@ -129,9 +138,6 @@ a:hover {
       box-shadow: none; }
       #home .home-container .social li:hover {
         background-color: white; }
-
-  #work .work-container {
-    padding: 30px; }
 
   .dp {
     height: 250px;
