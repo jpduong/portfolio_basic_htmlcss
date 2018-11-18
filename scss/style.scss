@@ -7,8 +7,7 @@ $white: white;
 $cream: #F6EDE9;
 $padding: 30px;
 $shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-// $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 100%);
-$background: green;
+$background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 100%);
 $margin-top: 29px;
 //#eef1f5
 
@@ -124,173 +123,39 @@ a:hover {
 
 //work 
 #work {
-    position: relative;
-    background-image: $background;
     height: 100vh;
-    text-align: center;
     border: 1px solid green;
-    .work-container {
-        // margin-top: $margin-top;
-        // @extend %center;
-        .mywork {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-items: center;
-            .project {
-                margin-top: 20px;
-                height: 130px;
-                width: 130px;
-                // border: 1px solid black;
-                // box-shadow: $shadow;
-                &.a {
-                    transform: rotate(-10deg);
-                    background: url('../resources/A.png');
-                    background-position: center;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                }
-                &.a:hover {
-                    transform: rotate(-10deg) scale(1.1);
-                }
-                &.b {
-                    transform: rotate(10deg);
-                }
-                &.b:hover {
-                    transform: rotate(10deg) scale(1.1);
-                    
-                }
-            }
-        }
-    }
-        .languages {
-            margin-bottom: 40px;
-            h3 {
-                padding-top: 20px;
-            }
-            .languages-icons {
-                display: flex;
-                justify-content: space-between;
-                width: 50%;
-                position: relative;
-                left: 50%;
-                transform: translatex(-50%);
-            }
-        }
-    }
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $background;
+}
 //me 
 .test {
-    background-position: center;
-    background-size: cover;  
+    line-height: 2;
 }
-
 #me {
-    background-image: $background;
+    // background: grey;
+    background: $background;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;   
+    align-content: center;
     text-align: center;
     height: 100vh;
-    position: relative;
-        .me-container {
-            margin-top: $margin-top;
-            // @extend %center;
-            .album {
-                margin-bottom: 40px;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                justify-items: center;
-                position: relative;
-                .album-item {
-                    width: 130px;
-                    height: 130px;
-                    border: 2px solid $grey;
-                }
-                .a {
-                    background: url('../resources/linh.jpg');
-                    background-position: center;
-                    background-size: cover;    
-                }
-                .a:hover {
-                    background: linear-gradient(
-                        rgba(20,20,20, .3), 
-                        rgba(20,20,20, .3)),
-                        url('../resources/linh.jpg');
-                        background-size: cover;
-                        background-position: center;
-                }
-                .a:hover::after {
-                    content: 'tam coc, vietnam';
-                    color: $white;
-                    position: relative;
-                    top: 50%;
-                }
-                .b {
-                    background: url('../resources/india.jpg');
-                    background-size: cover;
-                    background-position: center;
-                }
-                .b:hover {
-                    z-index: 98;
-                    background: linear-gradient(
-                        rgba(20,20,20, .3), 
-                        rgba(20,20,20, .3)),
-                        url('../resources/india.jpg');
-                        background-size: cover;
-                        background-position: center;  
-                }
-                .b:hover::after {
-                    content: 'spiti valley, india';
-                    color: $white;
-                    position: relative;
-                    top: 50%;
-                }
-                .c {
-                    background: url('../resources/hanoi.jpg');
-                    background-size: cover;
-                    background-position: center;
-                    border-left: 1px solid $grey;
-                }
-                .c:hover {
-                    z-index: 98;
-                    background: linear-gradient(
-                        rgba(20,20,20, .3), 
-                        rgba(20,20,20, .3)),
-                        url('../resources/hanoi.jpg');
-                        background-size: cover;
-                        background-position: center;
-                }
-                .c:hover::after {
-                    content: 'hanoi, vietnam';
-                    color: $white;
-                    position: relative;
-                    top: 50%;
-                }
-                .linh {
-                    position: absolute;
-                    top: 15px;
-                    .a {
-                        width: 100px;
-                        height: 100px;
-                        border: 2px solid $grey;
-                    }
-                }
-            }
-        } 
-            .interests {
-                display: flex;
-                justify-content: space-between;
-                width: 50%;
-                position: relative;
-                left: 50%;
-                transform: translatex(-50%);
-                margin-bottom: 20px;
-            }
-            .footer {
-                font-size: 50%
-            }
-            .footer a:hover {
-                color: white;
-            }
         }
-
+#contact {
+            height: 100vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;   
+            text-align: center;
+            background: $background;
+ }
 //media queries
 @media only screen and (min-width: 768px) {
     #home { 
@@ -308,9 +173,9 @@ a:hover {
     #work .work-container {
         padding: $padding;
     }
-    #me .me-container {
-        padding: $padding;
-    }
+    // #me .me-container {
+    //     padding: $padding;
+    // }
     .dp {
         height: 250px;
         width: 250px;
@@ -327,26 +192,26 @@ a:hover {
         height: 260px;
         width: 260px;
     }
-    #me .me-container {
-        border: 1px solid green;
-        .album { 
-            .album-item {
-                height: 250px;
-                width: 250px;
-            }
-            .linh {
-                // top: 10px;
-                .a {
-                    width: 220px;
-                    height: 220px;
-                }
-            }
-        }
-    }
+    // #me .me-container {
+    //     border: 1px solid green;
+    //     .album { 
+    //         .album-item {
+    //             height: 250px;
+    //             width: 250px;
+    //         }
+    //         .linh {
+    //             // top: 10px;
+    //             .a {
+    //                 width: 220px;
+    //                 height: 220px;
+    //             }
+    //         }
+    //     }
+    // }
 }
-.contact {
-    border: 1px solid purple;
-}
+// .contact {
+//     border: 1px solid purple;
+// }
 .text {
     width: 100px;
 }
@@ -356,11 +221,13 @@ a:hover {
     width: 150px;
     height: 150px;
 }
-#contact {
-    height: 100vh;
-    background-color: purple;
+
+h2 {
+    margin-top: 0;
+}
+.interests {
     display: flex;
-    justify-content: center;
-    align-items: center;   
-    text-align: center;
+    width: 30vw;
+    justify-content: space-around;
+    // border: 1px solid black;
 }

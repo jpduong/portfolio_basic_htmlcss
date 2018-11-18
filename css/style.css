@@ -89,125 +89,36 @@ a:hover {
         background-color: #bdc3c7; }
 
 #work {
-  position: relative;
-  background-image: green;
   height: 100vh;
-  text-align: center;
-  border: 1px solid green; }
-  #work .work-container .mywork {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center; }
-    #work .work-container .mywork .project {
-      margin-top: 20px;
-      height: 130px;
-      width: 130px; }
-      #work .work-container .mywork .project.a {
-        transform: rotate(-10deg);
-        background: url("../resources/A.png");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat; }
-      #work .work-container .mywork .project.a:hover {
-        transform: rotate(-10deg) scale(1.1); }
-      #work .work-container .mywork .project.b {
-        transform: rotate(10deg); }
-      #work .work-container .mywork .project.b:hover {
-        transform: rotate(10deg) scale(1.1); }
-  #work .languages {
-    margin-bottom: 40px; }
-    #work .languages h3 {
-      padding-top: 20px; }
-    #work .languages .languages-icons {
-      display: flex;
-      justify-content: space-between;
-      width: 50%;
-      position: relative;
-      left: 50%;
-      transform: translatex(-50%); }
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, white 0%, white 50%, #bdc3c7 50%, #bdc3c7 100%); }
 
 .test {
-  background-position: center;
-  background-size: cover; }
+  line-height: 2; }
 
 #me {
-  background-image: green;
+  background: linear-gradient(to bottom, white 0%, white 50%, #bdc3c7 50%, #bdc3c7 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
   text-align: center;
+  height: 100vh; }
+
+#contact {
   height: 100vh;
-  position: relative; }
-  #me .me-container {
-    margin-top: 29px; }
-    #me .me-container .album {
-      margin-bottom: 40px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-items: center;
-      position: relative; }
-      #me .me-container .album .album-item {
-        width: 130px;
-        height: 130px;
-        border: 2px solid #bdc3c7; }
-      #me .me-container .album .a {
-        background: url("../resources/linh.jpg");
-        background-position: center;
-        background-size: cover; }
-      #me .me-container .album .a:hover {
-        background: linear-gradient(rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.3)), url("../resources/linh.jpg");
-        background-size: cover;
-        background-position: center; }
-      #me .me-container .album .a:hover::after {
-        content: 'tam coc, vietnam';
-        color: white;
-        position: relative;
-        top: 50%; }
-      #me .me-container .album .b {
-        background: url("../resources/india.jpg");
-        background-size: cover;
-        background-position: center; }
-      #me .me-container .album .b:hover {
-        z-index: 98;
-        background: linear-gradient(rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.3)), url("../resources/india.jpg");
-        background-size: cover;
-        background-position: center; }
-      #me .me-container .album .b:hover::after {
-        content: 'spiti valley, india';
-        color: white;
-        position: relative;
-        top: 50%; }
-      #me .me-container .album .c {
-        background: url("../resources/hanoi.jpg");
-        background-size: cover;
-        background-position: center;
-        border-left: 1px solid #bdc3c7; }
-      #me .me-container .album .c:hover {
-        z-index: 98;
-        background: linear-gradient(rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.3)), url("../resources/hanoi.jpg");
-        background-size: cover;
-        background-position: center; }
-      #me .me-container .album .c:hover::after {
-        content: 'hanoi, vietnam';
-        color: white;
-        position: relative;
-        top: 50%; }
-      #me .me-container .album .linh {
-        position: absolute;
-        top: 15px; }
-        #me .me-container .album .linh .a {
-          width: 100px;
-          height: 100px;
-          border: 2px solid #bdc3c7; }
-  #me .interests {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    position: relative;
-    left: 50%;
-    transform: translatex(-50%);
-    margin-bottom: 20px; }
-  #me .footer {
-    font-size: 50%; }
-  #me .footer a:hover {
-    color: white; }
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom, white 0%, white 50%, #bdc3c7 50%, #bdc3c7 100%); }
 
 @media only screen and (min-width: 768px) {
   #home {
@@ -221,9 +132,6 @@ a:hover {
         background-color: white; }
 
   #work .work-container {
-    padding: 30px; }
-
-  #me .me-container {
     padding: 30px; }
 
   .dp {
@@ -240,19 +148,7 @@ a:hover {
 
   #work .work-container .bio .mywork .project {
     height: 260px;
-    width: 260px; }
-
-  #me .me-container {
-    border: 1px solid green; }
-    #me .me-container .album .album-item {
-      height: 250px;
-      width: 250px; }
-    #me .me-container .album .linh .a {
-      width: 220px;
-      height: 220px; } }
-.contact {
-  border: 1px solid purple; }
-
+    width: 260px; } }
 .text {
   width: 100px; }
 
@@ -260,12 +156,12 @@ a:hover {
   width: 150px;
   height: 150px; }
 
-#contact {
-  height: 100vh;
-  background-color: purple;
+h2 {
+  margin-top: 0; }
+
+.interests {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
+  width: 30vw;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=style.css.map */
