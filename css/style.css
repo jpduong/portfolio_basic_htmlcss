@@ -86,16 +86,9 @@ a:visited {
       #home .home-container .social li:hover {
         background-color: #bdc3c7; }
 
-#projects {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to bottom, white 0%, white 50%, #bdc3c7 50%, #bdc3c7 100%); }
-
 #me {
   background: linear-gradient(to bottom, white 0%, white 50%, #bdc3c7 50%, #bdc3c7 100%);
+  background: linear-gradient(to bottom, white 0%, white 50%, #9099A2 50%, #bdc3c7 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -104,17 +97,26 @@ a:visited {
   text-align: center;
   height: 100vh; }
 
+#projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, white 0%, white 50%, #bdc3c7 50%, #bdc3c7 100%);
+  background: linear-gradient(to bottom, white 0%, white 50%, #9099A2 50%, #bdc3c7 100%); }
+
 #contact {
   height: 100vh;
-  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to bottom, white 0%, white 50%, #bdc3c7 50%, #bdc3c7 100%); }
+  background: linear-gradient(to bottom, white 0%, white 50%, #bdc3c7 50%, #bdc3c7 100%);
+  background: linear-gradient(to bottom, white 0%, white 50%, #9099A2 50%, #bdc3c7 100%); }
   #contact div {
-    margin: 20px; }
+    padding: 5px; }
 
 .t img {
   border: 2px solid white; }
@@ -153,10 +155,6 @@ a:visited {
     width: 260px; } }
 .text {
   width: 100px; }
-
-.small {
-  width: 150px;
-  height: 150px; }
 
 .interests {
   display: flex;

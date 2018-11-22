@@ -5,6 +5,9 @@ $grey: #bdc3c7;
 $black: black;
 $white: white;
 $cream: #F6EDE9;
+$lavendar: #6D7993;
+$overcast: #9099A2;
+$paper: #D5D5D5;
 $padding: 30px;
 $shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 100%);
@@ -123,21 +126,10 @@ a:visited {
 }
 
 //work 
-#projects {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: $background;
-}
-//me 
-// .test {
-//     line-height: 2;
-// }
+
 #me {
-    // background: grey;
     background: $background;
+    background: linear-gradient(to bottom, $white 0%, $white 50%, $overcast 50%, $grey 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -146,17 +138,26 @@ a:visited {
     text-align: center;
     height: 100vh;
         }
+#projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $background;
+    background: linear-gradient(to bottom, $white 0%, $white 50%, $overcast 50%, $grey 100%);
+        }
 #contact {
-            height: 100vh;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;   
-            text-align: center;
-            background: $background;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    text-align: center;
+    background: $background;
+    background: linear-gradient(to bottom, $white 0%, $white 50%, $overcast 50%, $grey 100%);
     div {
-            margin: 20px;
+            padding: 5px;
     }
 }
 .t img {
@@ -168,6 +169,7 @@ a:visited {
     border: 1px solid $grey;
     resize: none;
 }
+
 //media queries
 @media only screen and (min-width: 768px) {
     #home { 
@@ -182,12 +184,6 @@ a:visited {
             }
         }
     }
-    // #work .work-container {
-    //     padding: $padding;
-    // }
-    // #me .me-container {
-    //     padding: $padding;
-    // }
     .dp {
         height: 250px;
         width: 250px;
@@ -209,20 +205,10 @@ a:visited {
     width: 100px;
 }
 
-//carousel
-.small {
-    width: 150px;
-    height: 150px;
-}
-
-// h2 {
-//     margin-top: 0;
-// }
 .interests {
     display: flex;
     width: 30vw;
     justify-content: space-around;
-    // border: 1px solid black;
 }
 .project-container {
     width: 100%;
@@ -239,7 +225,6 @@ a:visited {
 .languages {
     display: flex;
     width: 50vw;
-    // border: 1px solid black;
     justify-content: space-between;
 }
 
@@ -338,3 +323,8 @@ a:visited {
   -webkit-transform: scale(1.3) translateZ(0);
   transform: scale(1.3) translateZ(0);
 }
+
+// .footer{
+//     margin: 0;
+//     padding:
+// }
