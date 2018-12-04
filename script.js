@@ -2,10 +2,10 @@
 //     const loader = document.querySelector('.loader');
 //     loader.className += ' hidden';
 // });
-
+const navBar = document.getElementById("navbar"); 
+const toggle = document.getElementById("toggle");
 
 //navbar scroll 
-
 let prevScrollpos = window.pageYOffset;
 window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
@@ -16,3 +16,13 @@ window.onscroll = () => {
   }
   prevScrollpos = currentScrollPos;
 }
+
+//toggle
+toggle.addEventListener("click", function() {
+  if (navBar.style.background === "white") {
+      navBar.style.background = "blue";
+  }
+  else {
+    navBar.style.background = "white";
+  }
+});
