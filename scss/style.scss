@@ -11,6 +11,7 @@ $paper: #D5D5D5;
 $shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 100%);
 
+
 //general classes
 %center {
     position: absolute;
@@ -19,6 +20,7 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
     transform: translate(-50%,-50%);
 }
 * {
+    // cursor: url('../resources/ruby.png'), default;
     color: $black;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif; 
@@ -26,12 +28,12 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
     list-style: none;
     // line-height: 1;
 }
-#me, #contact, #footer, #home {
+#me, #contact, #footer, #home, #navbar > li > a {
     line-height: 2;
 }
 .icon {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 .icon-small {
     width: 12px;
@@ -61,7 +63,7 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
 }
 .loader.hidden {
     animation: fadeOut 1s;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
     animation-fill-mode: forwards;
 }
 @keyframes fadeOut {
@@ -126,10 +128,11 @@ a:visited {
 .album-item {
     margin: 10px;
     border-radius: 4mm;
-    height: 120px;
-    width: 120px;
+    height: 110px;
+    width: 110px;
     background-size: cover;
     background-position: center;
+    border: 2px solid $white;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -205,7 +208,7 @@ a:visited {
 
 .interests {
     display: flex;
-    width: 30vw;
+    width: 40vw;
     justify-content: space-around;
 }
 .project-container {

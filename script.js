@@ -17,12 +17,8 @@ window.onscroll = () => {
   prevScrollpos = currentScrollPos;
 }
 
-//toggle
-toggle.addEventListener("click", function() {
-  if (navBar.style.background === "white") {
-      navBar.style.background = "blue";
-  }
-  else {
-    navBar.style.background = "white";
-  }
-});
+//preloader
+window.addEventListener('load', function() {
+        const loader = document.querySelector('.loader');
+        loader.className += ' hidden';
+    });
