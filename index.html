@@ -12,44 +12,10 @@
 </head>
 
 <body>
-    <script src='https://unpkg.com/aos@next/dist/aos.js'></script>
-    <script>
-      AOS.init();
-    </script>
-
     <!-- pre-loader animation -->
-    <!-- <div class='loader hidden'>
+    <div class='loader hidden'>
         <img src='resources/loader.gif' alt='pre-loader picture'>
-    </div>  -->
-
-<!-- smooth scrolling -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
+    </div> 
 
 <!-- nav bar -->
     <div id='navbar' data-aos='fade-in' data-aos-delay='200'>
@@ -67,27 +33,27 @@ $(document).ready(function(){
                 <h1>james duong</h1>
                 <h4>web dev.</h4>
             </div>
-                <div class='social'>
-                    <li> 
-                        <a href='https://www.linkedin.com/in/james-phong-duong-9168a89a/' target='_blank'> 
-                            <img src='resources/linkedin.svg' alt='clickable linkedin image' class='icon-small'> 
-                        </a>
-                    </li>
-                    <li> 
-                        <a href='https://github.com/jamesphongduong' target='_blank'> 
-                            <img src='resources/github.svg' alt='clickable github image' class='icon-small'> 
-                        </a>
-                    </li>
-                    <li>                         
-                        <a href='https://www.instagram.com/jamesduong/' target='_blank'> 
-                            <img src='resources/insta.svg' alt='clickable instagram image' class='icon-small'> 
-                        </a>
-                    </li>
-                    <li> 
-                        <a href='https://medium.com/@jamesphongduong' target='_blank'> 
-                        <img src='resources/medium.svg' alt='clickable medium image' class='icon-small'> 
-                        </a>
-                    </li>
+            <div class='social'>
+                <li> 
+                    <a href='https://www.linkedin.com/in/james-phong-duong-9168a89a/' target='_blank'> 
+                        <img src='resources/linkedin.svg' alt='clickable linkedin image' class='icon-small'> 
+                    </a>
+                </li>
+                <li> 
+                    <a href='https://github.com/jamesphongduong' target='_blank'> 
+                        <img src='resources/github.svg' alt='clickable github image' class='icon-small'> 
+                    </a>
+                </li>
+                <li>                         
+                    <a href='https://www.instagram.com/jamesduong/' target='_blank'> 
+                        <img src='resources/insta.svg' alt='clickable instagram image' class='icon-small'> 
+                    </a>
+                </li>
+                <li> 
+                    <a href='https://medium.com/@jamesphongduong' target='_blank'> 
+                    <img src='resources/medium.svg' alt='clickable medium image' class='icon-small'> 
+                    </a>
+                </li>
             </div>
         </div>
         <a href="#me" class='arrow down'></a>
@@ -141,27 +107,7 @@ $(document).ready(function(){
         </div>
         <a href="#contact" class='arrow down'></a>
     </div>
-
-        <!-- <p>if you would like to collaborate, <br> please drop me a line below.</p>
-        <div>
-            <form method="POST"  action="https://formspree.io/james.duong93@gmail.com">
-                <div>
-                    <input type="text" name="name" placeholder="name" required class='input'>
-                </div>
-                <div>
-                    <input type="email" name="email" placeholder="email address" required class='input'>
-                </div>
-                <div>
-                    <textarea name="message" placeholder="message" required rows="8" cols='30' class='input'></textarea>
-                </div>
-                <input type="hidden" name="_next" value="https://jamesphongduong.github.io/" />
-                <input type="text" name="_gotcha" style="display:none" />
-                <input type="hidden" name="_subject" value="New submission!" />
-                <div>
-                    <button type="submit" class='input'>send</button>
-                </div>
-            </form>
-        </div> -->
+    
 <!-- contact -->
     <div id='contact' data-aos='fade-in' data-aos-delay='200'>
         <div class='james'>
@@ -178,7 +124,11 @@ $(document).ready(function(){
         </div>
         <a href="#home" class='arrow up'></a>
     </div>
-        
+
+    <!-- importing js scripts -->
+    <script src='https://unpkg.com/aos@next/dist/aos.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src='script.js'></script>
+
 </body>
 </html>
