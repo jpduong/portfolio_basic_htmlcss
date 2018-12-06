@@ -33,6 +33,6 @@ function emailFunction() {
   el.select();
   document.execCommand("copy");
   document.body.removeChild(el);
-  alert("Copied to clipboard: james.duong93@gmail.com");
+  alert("Copied to clipboard: \n\njames.duong93@gmail.com");
 }
 

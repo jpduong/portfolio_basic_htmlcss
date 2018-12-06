@@ -37,13 +37,15 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
     transform: translate(-50%,-50%);
 }
 * {
-    // cursor: url('../resources/ruby.png'), default;
     color: $black;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif; 
     text-decoration: none;
     list-style: none;
     // line-height: 1;
+}
+h1, h2, h3, h4 {
+    letter-spacing: 2px;
 }
 #me, #contact, #footer, #home, #navbar > li > a {
     line-height: 2;
@@ -156,7 +158,8 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
     transition: 0.3s;
 }
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    // box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
 }
 .album {
     margin-top: 60px;
@@ -212,19 +215,17 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
             padding: 5px;
     }
 }
-.t img {
-    border: 2px solid $white;
-}
-.input {
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid $grey;
-    resize: none;
-}
 
-.text {
-    width: 100px;
-}
+// .input {
+//     padding: 10px;
+//     border-radius: 4px;
+//     border: 1px solid $grey;
+//     resize: none;
+// }
+
+// .text {
+//     width: 100px;
+// }
 
 .interests {
     display: flex;
@@ -284,7 +285,9 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
   #email:hover {
     cursor: copy;
   }
-
+  #footer {
+      margin-top: 150px;
+  }
 
   //media queries
   @media only screen and (min-width: 768px) {

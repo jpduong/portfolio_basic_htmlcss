@@ -22,6 +22,9 @@
   text-decoration: none;
   list-style: none; }
 
+h1, h2, h3, h4 {
+  letter-spacing: 2px; }
+
 #me, #contact, #footer, #home, #navbar > li > a {
   line-height: 2; }
 
@@ -112,7 +115,7 @@
   transition: 0.3s; }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2); }
 
 .album {
   margin-top: 60px;
@@ -164,18 +167,6 @@
   position: relative; }
   #contact div {
     padding: 5px; }
-
-.t img {
-  border: 2px solid white; }
-
-.input {
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #bdc3c7;
-  resize: none; }
-
-.text {
-  width: 100px; }
 
 .interests {
   display: flex;
@@ -230,6 +221,9 @@
 
 #email:hover {
   cursor: copy; }
+
+#footer {
+  margin-top: 150px; }
 
 @media only screen and (min-width: 768px) {
   .dp {
