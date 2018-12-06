@@ -18,7 +18,21 @@ window.onscroll = () => {
 }
 
 //preloader
-window.addEventListener('load', function() {
-        const loader = document.querySelector('.loader');
-        loader.className += ' hidden';
-    });
+// window.addEventListener('load', function() {
+//         const loader = document.querySelector('.loader');
+//         loader.className += ' hidden';
+//     });
+
+// email function
+let email = document.getElementById("email").addEventListener("click", emailFunction);
+
+function emailFunction() {
+  const el = document.createElement("textarea");
+  el.value = "james.duong93@gmail.com";
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand("copy");
+  document.body.removeChild(el);
+  alert("Copied to clipboard: james.duong93@gmail.com");
+}
+

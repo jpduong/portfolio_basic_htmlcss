@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300");
+.arrow {
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translatex(-50%);
+  background: url("../resources/up.svg");
+  height: 15px;
+  width: 15px; }
+
+.down {
+  background: url("../resources/down.svg"); }
+
+.up {
+  background: url("../resources/up.svg"); }
+
 * {
   color: black;
   box-sizing: border-box;
@@ -60,9 +76,6 @@
   #navbar li {
     padding: 25px;
     line-height: 1; }
-
-a:visited {
-  color: black; }
 
 #home {
   background-color: white;
@@ -126,7 +139,8 @@ a:visited {
   align-items: center;
   align-content: center;
   text-align: center;
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
 
 #projects {
   height: 100vh;
@@ -135,7 +149,8 @@ a:visited {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to bottom, white 0%, white 50%, #bdc3c7 50%, #bdc3c7 100%);
-  background: linear-gradient(to bottom, white 0%, white 50%, #9099A2 50%, #bdc3c7 100%); }
+  background: linear-gradient(to bottom, white 0%, white 50%, #9099A2 50%, #bdc3c7 100%);
+  position: relative; }
 
 #contact {
   height: 100vh;
@@ -145,7 +160,8 @@ a:visited {
   align-items: center;
   text-align: center;
   background: linear-gradient(to bottom, white 0%, white 50%, #bdc3c7 50%, #bdc3c7 100%);
-  background: linear-gradient(to bottom, white 0%, white 50%, #9099A2 50%, #bdc3c7 100%); }
+  background: linear-gradient(to bottom, white 0%, white 50%, #9099A2 50%, #bdc3c7 100%);
+  position: relative; }
   #contact div {
     padding: 5px; }
 
@@ -211,6 +227,9 @@ a:visited {
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
   left: 0;
   right: 0; }
+
+#email:hover {
+  cursor: copy; }
 
 @media only screen and (min-width: 768px) {
   .dp {
