@@ -106,8 +106,8 @@ h1, h2, h3, h4 {
 .album-item {
   margin: 10px;
   border-radius: 4mm;
-  height: 110px;
-  width: 110px;
+  height: 100px;
+  width: 100px;
   background-size: cover;
   background-position: center;
   border: 2px solid white; }
@@ -172,7 +172,7 @@ h1, h2, h3, h4 {
 
 .interests {
   display: flex;
-  width: 40vw;
+  width: 80vw;
   justify-content: space-around; }
 
 .project-container {
@@ -187,7 +187,7 @@ h1, h2, h3, h4 {
 
 .languages {
   display: flex;
-  width: 50vw;
+  width: 80vw;
   justify-content: space-between; }
 
 #email:hover {
@@ -203,11 +203,17 @@ h1, h2, h3, h4 {
 
   .album {
     margin-top: 160px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    width: 60vw; }
 
   .album-item {
     margin: 20px;
     height: 150px;
-    width: 150px; } }
+    width: 150px; }
+
+  .languages {
+    width: 60vw; } }
 
 /*# sourceMappingURL=style.css.map */
