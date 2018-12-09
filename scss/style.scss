@@ -11,14 +11,11 @@ $paper: #D5D5D5;
 $shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 100%);
 
-.vh {
-    // color: green;
-}
   //arrow
   .arrow {
     color: $white;
     position: absolute;
-    bottom: 5%;
+    bottom: 2%;
     left: 50%;
     transform: translatex(-50%);
     background: url("../resources/up.svg");
@@ -40,12 +37,11 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
     transform: translate(-50%,-50%);
 }
 * {
-    // color: $black;
+    color: $black;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif; 
     text-decoration: none;
     list-style: none;
-    // line-height: 1;
 }
 h1, h2, h3, h4 {
     letter-spacing: 2px;

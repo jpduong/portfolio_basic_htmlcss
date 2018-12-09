@@ -2,7 +2,7 @@
 .arrow {
   color: white;
   position: absolute;
-  bottom: 5%;
+  bottom: 2%;
   left: 50%;
   transform: translatex(-50%);
   background: url("../resources/up.svg");
@@ -16,6 +16,7 @@
   background: url("../resources/up.svg"); }
 
 * {
+  color: black;
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
   text-decoration: none;

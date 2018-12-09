@@ -61,19 +61,13 @@ $(document).ready(function(){
   });
 });
 
-
-//vh
+//vh - adjusting VH on mobile view as URL engine bugs out the VH
 function calcVH() {
-  console.log("running");
-  let vH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+  const vH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
   const all = document.querySelectorAll('.vh');
   all.forEach(element => {
-    // element.setAttribute("style", "color: yellow;");
     element.setAttribute("style", "height:" + vH + "px;");
   });
-  
-  // document.getElementsByClassName("selector").setAttribute("style", "color: green;");
-  // document.getElementById("selector").setAttribute("style", "height:" + vH + "px;");
 }
 calcVH();
 window.addEventListener('onorientationchange', calcVH, true);
