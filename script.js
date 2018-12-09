@@ -64,8 +64,16 @@ $(document).ready(function(){
 
 //vh
 function calcVH() {
-  var vH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-  document.getElementsByClassName("VH").setAttribute("style", "height:" + vH + "px;");
+  console.log("running");
+  let vH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+  const all = document.querySelectorAll('.vh');
+  all.forEach(element => {
+    // element.setAttribute("style", "color: yellow;");
+    element.setAttribute("style", "height:" + vH + "px;");
+  });
+  
+  // document.getElementsByClassName("selector").setAttribute("style", "color: green;");
+  // document.getElementById("selector").setAttribute("style", "height:" + vH + "px;");
 }
 calcVH();
 window.addEventListener('onorientationchange', calcVH, true);

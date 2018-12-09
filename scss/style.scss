@@ -11,7 +11,9 @@ $paper: #D5D5D5;
 $shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 100%);
 
-
+.vh {
+    // color: green;
+}
   //arrow
   .arrow {
     color: $white;
@@ -38,7 +40,7 @@ $background: linear-gradient(to bottom, $white 0%, $white 50%, $grey 50%, $grey 
     transform: translate(-50%,-50%);
 }
 * {
-    color: $black;
+    // color: $black;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif; 
     text-decoration: none;
