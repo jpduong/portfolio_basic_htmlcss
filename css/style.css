@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300");
 
-.arrow {
+/* .arrow {
   color: white;
   position: absolute;
   bottom: 2%;
@@ -8,17 +8,17 @@
   transform: translatex(-50%);
   background: url("../resources/up.svg");
   height: 15px;
-  width: 15px; }
+  width: 15px; } */
 
-.down {
+/* .down {
   background: url("../resources/down.svg"); }
 
 .up {
-  background: url("../resources/up.svg"); }
+  background: url("../resources/up.svg"); } */
 
 * {
   color: black;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: 'Nunito', sans-serif;
   text-decoration: none;
   list-style: none; }
