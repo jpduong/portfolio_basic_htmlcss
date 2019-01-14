@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300");
-/* test */
-.test {
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-}
 
 .arrow {
   color: white;
@@ -151,7 +146,7 @@ h1, h2, h3, h4 {
   position: relative; }
 
 #projects {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,10 +176,13 @@ h1, h2, h3, h4 {
 .project-container {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around; }
 
 .project-item {
+  margin: 10px;
   width: 200px;
   border-radius: 35px; }
 
