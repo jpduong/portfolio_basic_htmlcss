@@ -1,6 +1,16 @@
 const navBar = document.getElementById("navbar"); 
 const toggle = document.getElementById("toggle");
 
+//test
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 //navbar hide when scroll 
 let prevScrollpos = window.pageYOffset;
 window.onscroll = () => {
